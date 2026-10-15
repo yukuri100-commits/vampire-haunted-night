@@ -1,0 +1,68 @@
+*{box-sizing:border-box}body{margin:0;background:#dab552;color:#24221d;font-family:Arial,Helvetica,sans-serif}button{font:inherit;color:inherit;cursor:pointer;touch-action:manipulation}button:focus-visible,input:focus-visible{outline:4px solid #79192e;outline-offset:5px}#castle{position:relative;height:100svh;min-height:650px;overflow:hidden;background:#dab552}header{position:absolute;top:30px;left:4vw;right:4vw;display:flex;justify-content:space-between;align-items:center;z-index:8}.brand{font-size:12px;font-weight:700;letter-spacing:.13em}.tools{display:flex;gap:20px}.tools button{background:none;border:0;border-bottom:1px solid #24221d55;padding:8px 0;font-size:13px}.vamp-stage{position:absolute;right:-2vw;bottom:-55vh;height:150vh;aspect-ratio:445/690;transform-origin:50% 70%;filter:drop-shadow(12px 20px 18px #79581735)}#vamp{height:100%;width:100%;object-fit:contain;pointer-events:none}.hit{position:absolute;background:transparent;border:0;border-radius:35%;z-index:3}.hair{left:23%;top:2%;width:53%;height:20%}.bow{left:39%;top:32%;width:27%;height:13%}.body{left:23%;top:46%;width:55%;height:47%}.intro{position:absolute;left:5vw;top:18%;z-index:4;pointer-events:none}.overline{font-size:12px;font-weight:700;letter-spacing:.12em}h1{font-size:clamp(75px,10.5vw,180px);font-style:italic;font-weight:950;line-height:.86;letter-spacing:-.065em;margin:27px 0 26px}.intro p{font-size:17px;line-height:1.5;margin:0}.playbar{position:absolute;bottom:9%;left:5vw;display:flex;gap:9px;z-index:8}.playbar button{min-height:56px;padding:14px 22px;border:1px solid #24221d;border-radius:30px;background:#f4dfa7;font-size:15px;font-weight:700}.playbar button:first-child{background:#25231e;color:#f4dfa7}.playbar button:hover{background:#fff0c4;color:#25231e}.speech{position:absolute;right:24%;top:15%;max-width:30vw;padding:20px 25px;background:#fff2cb;border:1px solid #24221d30;border-radius:28px 28px 0 28px;z-index:10;opacity:0;transform:translateY(12px);transition:.25s;pointer-events:none;box-shadow:0 10px 35px #50320c22;font:700 clamp(20px,2vw,32px)/1.3 Arial,sans-serif}.speech.show{opacity:1;transform:none}footer{position:absolute;bottom:22px;right:4vw;left:5vw;display:flex;justify-content:space-between;align-items:center;font-size:11px;letter-spacing:.08em;z-index:8}footer label{display:flex;align-items:center;gap:10px}input{width:100px;accent-color:#79192e}#bat{position:fixed;left:0;top:0;margin:0;display:block;width:clamp(100px,13vw,210px);pointer-events:none;z-index:12;will-change:transform}dialog{border:1px solid #24221d;border-radius:25px;background:#f4dfa7;color:#24221d;max-width:850px;width:85vw;padding:70px 35px 40px;text-align:center;box-shadow:0 25px 100px #0005}dialog::backdrop{background:#211b14aa;backdrop-filter:blur(6px)}.close{position:absolute;right:20px;top:18px;background:none;border:1px solid #24221d;border-radius:22px;padding:12px 20px;font-size:16px}dialog h2{font-size:clamp(34px,4vw,60px);line-height:1.1;margin:12px 0 18px}dialog p{font-size:20px;line-height:1.6}.choices{display:flex;justify-content:center;gap:25px;margin-top:25px}.choice{background:#25231e;color:#f4dfa7;border:0;border-radius:24px;min-width:210px;padding:25px;font-size:30px;font-weight:700}.choice span{display:block;font-size:18px;font-weight:400;margin-top:10px}.surprise{font-size:110px;display:block;animation:invite 1s infinite}.again{display:inline-block;background:#25231e;color:#f4dfa7;border:0;border-radius:24px;padding:16px 32px;font-size:20px;margin-top:20px}.react{animation:wobble .6s ease}@keyframes wobble{25%{transform:rotate(-3deg)}65%{transform:rotate(3deg)}}@keyframes invite{50%{transform:translateY(-8px)}}@media(max-width:700px){#castle{min-height:740px}header{top:20px;align-items:start}.brand{max-width:120px;font-size:10px}.tools{gap:10px}.tools button{font-size:11px}.intro{top:17%;left:5vw}.overline{max-width:160px;display:block;font-size:10px;line-height:1.5}h1{font-size:17vw;margin-top:22px}.intro p{font-size:14px;max-width:140px}.vamp-stage{height:100vh;right:-35vw;bottom:-20vh}.playbar{left:5vw;right:5vw;bottom:10%;flex-wrap:wrap;gap:8px}.playbar button{padding:12px 16px;min-height:50px;font-size:14px}.speech{top:17%;right:5%;max-width:70vw;font-size:22px}footer{font-size:9px;gap:8px;bottom:18px}footer>span:last-child{display:none}input{width:70px}.choices{gap:12px}.choice{min-width:0;flex:1;font-size:24px;padding:20px 10px}dialog{padding:65px 20px 30px}.surprise{font-size:80px}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/* Candlelit pumpkins sit behind the character and all controls. */
+.pumpkins{position:absolute;inset:0;pointer-events:none;z-index:1}.vamp-stage{z-index:2}.pumpkin{position:absolute;isolation:isolate;animation:candlelight 4.7s ease-in-out infinite}.pumpkin img{display:block;width:100%;height:auto;filter:drop-shadow(0 8px 9px #70421340)}.pumpkin::before{content:"";position:absolute;inset:22% -16% -8%;z-index:-1;border-radius:50%;background:radial-gradient(ellipse,#ffbd4670 0%,#ff931b30 42%,transparent 70%);filter:blur(12px);animation:candlehalo 4.7s ease-in-out infinite}.pumpkin-large{width:clamp(150px,20vw,350px);left:44%;bottom:17%;transform:rotate(-8deg)}.pumpkin-medium{width:clamp(125px,16vw,275px);right:-1%;bottom:28%;transform:rotate(7deg);animation-duration:5.9s;animation-delay:-2s}.pumpkin-small{width:clamp(100px,12vw,210px);right:0%;bottom:9%;transform:rotate(-5deg);animation-duration:3.8s;animation-delay:-1s}.pumpkin-medium::before{animation-duration:5.9s;animation-delay:-2s}.pumpkin-small::before{animation-duration:3.8s;animation-delay:-1s}@keyframes candlelight{0%,100%{filter:brightness(.94)}45%{filter:brightness(1.08)}70%{filter:brightness(1)}}@keyframes candlehalo{0%,100%{opacity:.5}45%{opacity:1}70%{opacity:.7}}@media(max-width:700px){.pumpkin-large{width:30vw;left:37%;bottom:29%}.pumpkin-medium{width:27vw;right:-5%;bottom:45%}.pumpkin-small{width:22vw;right:-4%;bottom:23%}}
+
+/* Warm studio depth; pumpkin cluster behind the vampire's own right arm. */
+#castle{background:radial-gradient(ellipse at 73% 28%,#fff0ba8c 0%,transparent 43%),radial-gradient(ellipse at 51% 68%,#ffb23b60 0%,transparent 32%),linear-gradient(125deg,#dfbd65 0%,#dab552 48%,#ba8c37 100%)}
+#castle::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 76% 86%,#63451f3b 0%,transparent 35%),linear-gradient(0deg,#73522024,transparent 27%);z-index:0}
+.pumpkin-large{width:clamp(150px,19vw,335px);left:45%;right:auto;bottom:17%;z-index:3;transform:rotate(-7deg)}
+.pumpkin-medium{width:clamp(105px,12vw,215px);left:51%;right:auto;bottom:38%;z-index:2;transform:rotate(8deg)}
+.pumpkin-small{width:clamp(80px,9vw,160px);left:42%;right:auto;bottom:36%;z-index:1;transform:rotate(-5deg)}
+.pumpkin::after{content:"";position:absolute;left:10%;right:8%;bottom:-3%;height:13%;border-radius:50%;background:#67401b55;filter:blur(10px);z-index:-1}
+@media(max-width:700px){.pumpkin-large{width:29vw;left:38%;bottom:28%}.pumpkin-medium{width:20vw;left:49%;bottom:46%}.pumpkin-small{width:15vw;left:36%;bottom:44%}}
+
+/* Fit the longer Halloween headline beside the character. */
+.intro h1{font-size:clamp(62px,8.1vw,140px)}
+@media(max-width:700px){.intro h1{font-size:12.5vw}}
+
+/* Native portrait frames from the new 1080p character video. */
+.vamp-stage{aspect-ratio:1040/1840}
+
+.vamp-render{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+
+/* Headline mascots and recessed candlelit pumpkin cluster. */
+header{justify-content:flex-end}.tools{gap:10px}.tools button{width:40px;height:40px;border:1px solid #24221d30;border-radius:50%;font-size:21px;background:#fff0c41a;padding:0}
+.intro{top:26%}.intro h1{position:relative;margin:0;isolation:isolate}.headline-ghost{position:absolute;display:block;width:clamp(65px,6.8vw,120px);z-index:2;filter:drop-shadow(3px 6px 4px #54381d40)}.headline-ghost img{display:block;width:100%}.ghost-one{left:8%;top:-.69em;transform:rotate(-12deg)}.ghost-two{left:65%;top:-.55em;width:clamp(52px,5.4vw,95px);transform:rotate(14deg)}
+.pumpkin-large{width:clamp(125px,14vw,250px);left:48%;bottom:21%;transform:rotate(-7deg)}.pumpkin-medium{width:clamp(85px,9vw,165px);left:54%;bottom:38%;transform:rotate(8deg)}.pumpkin-small{width:clamp(65px,6.8vw,120px);left:46%;bottom:37%;transform:rotate(-5deg)}
+.pumpkin img{filter:drop-shadow(5px 10px 8px #57351660)}.pumpkin::after{left:3%;right:-20%;bottom:-5%;height:16%;background:#61401f70;filter:blur(12px);transform:skewX(-24deg)}.pumpkin::before{background:radial-gradient(ellipse,#ffdb8680 0%,#ff9c2638 40%,transparent 72%)}
+#castle{background:radial-gradient(ellipse at 69% 23%,#fff3c6a0 0%,transparent 43%),radial-gradient(ellipse at 55% 66%,#ffbe535c 0%,transparent 30%),linear-gradient(125deg,#dfbd65 0%,#dab552 48%,#b88936 100%)}
+@media(max-width:700px){.intro{top:27%}.pumpkin-large{width:23vw;left:42%;bottom:29%}.pumpkin-medium{width:16vw;left:52%;bottom:44%}.pumpkin-small{width:12vw;left:40%;bottom:43%}.headline-ghost{width:15vw}.ghost-two{width:12vw}.tools button{width:36px;height:36px;font-size:19px}}
+
+/* Per-letter anchor keeps the second ghost over K on every screen. */
+.letter-k{position:relative;display:inline-block}.letter-k .ghost-two{left:-.13em;top:-.64em;width:.66em;transform:rotate(10deg)}
+.headline-ghost img{animation:ghost-drift 4.5s ease-in-out infinite}.ghost-two img{animation-duration:5.7s;animation-delay:-2s}
+@keyframes ghost-drift{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-10px) rotate(4deg)}}
+.pumpkin-large{width:clamp(100px,11vw,195px);left:27%;bottom:30%;transform:rotate(-8deg)}
+.pumpkin-medium{width:clamp(70px,8vw,145px);left:18%;bottom:47%;transform:rotate(6deg)}
+.pumpkin-small{width:clamp(55px,6vw,105px);left:32%;bottom:58%;transform:rotate(-5deg)}
+.pumpkin img{position:relative;z-index:1}.pumpkin-beam{position:absolute;pointer-events:none;z-index:-1;left:-165%;top:-110%;width:300%;height:180%;transform-origin:88% 95%;transform:rotate(-12deg);clip-path:polygon(8% 0,95% 92%,80% 100%,0 35%);background:linear-gradient(135deg,transparent 0%,#fff0ab08 22%,#ffda7b45 68%,#ffe6a68c 100%);filter:blur(13px);opacity:.7}.pumpkin-medium .pumpkin-beam{transform:rotate(18deg);opacity:.5}.pumpkin-small .pumpkin-beam{transform:rotate(-24deg);opacity:.4}
+@media(max-width:700px){.pumpkin-large{width:19vw;left:27%;bottom:40%}.pumpkin-medium{width:14vw;left:17%;bottom:55%}.pumpkin-small{width:11vw;left:35%;bottom:62%}.letter-k .ghost-two{width:.7em;left:-.16em}}
+
+/* Screenshot placement: lower headline; tiny lantern cluster in the central gap. */
+.intro{top:36%}.intro h1{font-size:clamp(62px,7.7vw,134px)}
+.pumpkin-large{width:5.7vw;left:44%;top:34%;bottom:auto;transform:rotate(-8deg)}
+.pumpkin-medium{width:4.5vw;left:48.5%;top:39%;bottom:auto;transform:rotate(7deg)}
+.pumpkin-small{width:4.8vw;left:44.5%;top:45%;bottom:auto;transform:rotate(-4deg)}
+.pumpkin-beam{opacity:.45}.pumpkin-medium .pumpkin-beam{opacity:.35}.pumpkin-small .pumpkin-beam{opacity:.3}
+@media(max-width:700px){.intro{top:37%}.intro h1{font-size:11.8vw}.pumpkin-large{width:9vw;left:53%;top:32%;bottom:auto}.pumpkin-medium{width:7vw;left:61%;top:36%;bottom:auto}.pumpkin-small{width:7.5vw;left:54%;top:40%;bottom:auto}}
+
+/* Receding lanterns rest on a shared lit floor in the marked lower gap. */
+.pumpkin-large{width:5.2vw;left:45%;top:auto;bottom:24%;z-index:3;transform:rotate(-5deg)}
+.pumpkin-medium{width:3.9vw;left:49.4%;top:auto;bottom:25%;z-index:2;transform:rotate(6deg)}
+.pumpkin-small{width:3.1vw;left:47.7%;top:auto;bottom:28%;z-index:1;transform:rotate(-3deg)}
+.pumpkin img{filter:brightness(.93) saturate(.87) drop-shadow(3px 5px 4px #69481d45)}
+.pumpkin-medium img{filter:brightness(.9) saturate(.82) blur(.3px) drop-shadow(3px 5px 4px #69481d35)}
+.pumpkin-small img{filter:brightness(.87) saturate(.78) blur(.5px) drop-shadow(2px 4px 4px #69481d30)}
+.pumpkin::after{left:2%;right:-14%;height:10%;bottom:-2%;background:#63452460;filter:blur(5px);transform:skewX(-20deg)}
+.pumpkins::after{content:"";position:absolute;left:42.5%;top:73%;width:14%;height:6%;border-radius:50%;background:radial-gradient(ellipse,#ffe19a55 0%,#79542120 43%,transparent 72%);transform:scaleY(.55);filter:blur(7px);z-index:0}
+.pumpkin-beam{opacity:.22}.pumpkin-medium .pumpkin-beam{opacity:.16}.pumpkin-small .pumpkin-beam{opacity:.12}
+@media(max-width:700px){.pumpkin-large{width:9vw;left:49%;top:auto;bottom:27%}.pumpkin-medium{width:7vw;left:57%;top:auto;bottom:28%}.pumpkin-small{width:5.5vw;left:54%;top:auto;bottom:31%}.pumpkins::after{left:46%;top:70%;width:23%;height:5%}}
+
+/* Light flickers only inside the carved openings, at independent candle rhythms. */
+.pumpkin{animation:none}
+.candle-core{position:absolute;inset:0;z-index:2;pointer-events:none;clip-path:url(#lantern-openings);background:radial-gradient(ellipse at 54% 65%,#fffbd2,#ffd84c 70%);mix-blend-mode:screen;opacity:.35;animation:lantern-flicker 3.7s ease-in-out infinite}
+.pumpkin-medium .candle-core{animation-duration:4.9s;animation-delay:-2.3s}
+.pumpkin-small .candle-core{animation-duration:4.3s;animation-delay:-1.4s}
+@keyframes lantern-flicker{0%,100%{opacity:.20}12%{opacity:.62}24%{opacity:.30}38%{opacity:.76}51%{opacity:.42}66%{opacity:.66}78%{opacity:.18}90%{opacity:.53}}
+@media(prefers-reduced-motion:reduce){.candle-core{animation:none;opacity:.4}}
